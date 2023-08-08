@@ -2,6 +2,7 @@
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: column;
     width: 50rem;
     overflow: hidden;
     margin-bottom: 3rem;

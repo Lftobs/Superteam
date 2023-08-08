@@ -343,7 +343,7 @@ footer .bottom p {
     column-gap: 0rem;
     gap: 1rem;
     row-gap: 1rem;
-    grid-template-columns: repeat(auto-fill, 25rem);
+    grid-template-columns: repeat(auto-fill, 1fr);
   
   }
   .sub h3 {
