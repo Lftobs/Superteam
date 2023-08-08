@@ -75,11 +75,11 @@ li:hover::before {
       backdrop-filter: blur(10px);
       display: flex;
       align-items: center;
-      gap: 1.6rem;
-      justify-content: space-between;
+      gap: 1.5rem;
+      justify-content: space-evenly;
       padding: 1rem;
       padding-inline: 1.3rem;
-      width: 80%;
+      width: 95%;
       border-radius: 5rem;
       margin: auto;
       text-align: center;

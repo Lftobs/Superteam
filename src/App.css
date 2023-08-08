@@ -370,7 +370,13 @@ footer .bottom p {
     width: 80%;
   }
 
-  
+  .sub h3 {
+    font-size: 1.1rem;
+  }
+
+  .sub button {
+    font-size: .8rem;
+  }
 
 }
 
