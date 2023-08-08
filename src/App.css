@@ -269,6 +269,10 @@ footer .bottom p {
   color: var(--grey);
 }
 
+footer li {
+  font-size: .8rem;
+}
+
 .socials {
   display: flex;
   gap: 1rem;
