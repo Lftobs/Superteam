@@ -1,0 +1,46 @@
+.carousel {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 50rem;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+
+.controls {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.dots {
+    display: flex;
+    gap: 1rem;
+}
+
+.dots > span {
+    width: .6rem;
+    height: .6rem;
+    border-radius: 50%;
+    background: rgba(141, 141, 141, 1);
+    /* border: 1px solid black; */
+}
+
+.left, .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px solid var(--l-bg) ;
+}
+
+@media screen and (max-width: 900px){
+    .carousel {
+        width: 90%;
+    }
+}

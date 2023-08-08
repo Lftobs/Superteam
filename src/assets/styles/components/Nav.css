@@ -1,0 +1,111 @@
+ /* nav css */
+header {
+  padding-inline: 1.5rem;
+  position: relative;
+  z-index: 99;
+
+}
+
+nav {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  color:aliceblue;
+  cursor: default;
+}
+
+nav ul {
+  display: flex;
+  gap: .8rem;
+  justify-content: space-evenly;
+  width: 50%;
+  list-style: none;
+
+}
+
+nav div {
+  color: var(--l-bg);
+  font-weight: 700;
+  font-size: 1.5rem;
+
+}
+
+li {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: 1s ease;
+}
+
+nav figure {
+  background: url('/chevron-down.svg');
+  height: 1rem;
+  width: 1rem;
+}
+
+li:hover::before {
+  content: '';
+  height: .7rem;
+  width: .7rem;
+  border-radius: 50%;
+  background: var(--l-bg);
+  display: flex;
+  position:relative;
+}
+
+/* nav css end */
+
+@media screen and (max-width: 760px) {
+    header {
+      position: relative;
+      z-index: 10000;
+    }
+    nav div {
+      font-size: 1.2rem;
+      width: 100%;
+      text-align: center;
+    }
+  
+    nav ul {
+      position: fixed;
+      background: rgba(0 0 0 / .5);
+      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      justify-content: space-between;
+      padding: 1rem;
+      padding-inline: 1.3rem;
+      width: 80%;
+      border-radius: 5rem;
+      margin: auto;
+      text-align: center;
+      right: 0;
+      left: 0;
+      top: 4rem;
+      overflow-x: scroll;
+    }
+  
+    nav ul::-webkit-scrollbar {
+      color: transparent;
+      height: .1rem;
+    }
+  
+    nav ul::-webkit-scrollbar-track {
+      color: transparent;
+    }
+  
+    nav ul::-webkit-scrollbar-thumb {
+      color: transparent;
+      height: .1rem;
+    }
+  
+    nav li {
+      white-space: nowrap;
+      font-size: .8rem;
+      /* gap: .5rem; */
+    }
+}
