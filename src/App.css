@@ -201,7 +201,7 @@ h2 {
   text-align: center;
   width: 50%;
   font-size: 2rem;
-  white-space: nowrap;
+  
   margin-top: 4rem;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -345,6 +345,9 @@ footer .bottom p {
     row-gap: 1rem;
     grid-template-columns: repeat(auto-fill, 25rem);
   
+  }
+  .sub h3 {
+    white-space: wrap;
   }
 }
 
