@@ -102,7 +102,7 @@
     }
 
     .t-img {
-        width: ;
+        width: 90% !important;
         height: auto;
         background: red;
     }
