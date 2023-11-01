@@ -1,9 +1,8 @@
 import { useState, useRef } from 'react'
 import './App.css'
-import Tutorials from './components/Tutorials'
-import { CaseStudies } from './components/CaseStudies'
+import Tutorials from './components/Tutorial/Tutorials'
+import { CaseStudies } from './components/Case-studies/CaseStudies'
 import { Contact } from './components/Contact'
-import { Footer } from './components/Footer'
 import { About } from './components/About'
 
 function App() {
@@ -13,6 +12,8 @@ function App() {
     bg: 'transparent',
     color: 'white'
   }
+
+  const id = 'about' 
   return (
     <>
     <section className='pages'>
@@ -30,7 +31,7 @@ function App() {
         </div>
         <div className='h-img'><img src="/Solana SOL Coin.svg" alt="" /></div>
       </div>
-      <About />
+      <About id={id}/>
       <CaseStudies />
 
       <Tutorials styles={{}}/>

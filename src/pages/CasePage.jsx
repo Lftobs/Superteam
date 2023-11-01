@@ -1,5 +1,5 @@
 import React from 'react'
-import { CaseStudies } from '../components/CaseStudies'
+import { CaseStudies } from '../components/Case-studies/CaseStudies.jsx'
 import { Contact } from '../components/Contact'
 import { style } from '../assets/Helper'
 

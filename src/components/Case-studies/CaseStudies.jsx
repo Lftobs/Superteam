@@ -1,5 +1,5 @@
 import React from 'react'
-import { caseStudies } from '../assets/Helper'
+import { caseStudies } from '../../assets/Helper'
 import Card from './Card'
 
 
@@ -15,8 +15,8 @@ export const CaseStudies = () => {
         </div>
         <div className='cards-section'>
           <div className='cards'>
-            { caseStudies.map(d => (
-                <Card title={d.title} content={d.content} img={d.img}/>
+            { caseStudies.map((d, id) => (
+                <Card title={d.title} content={d.content} img={d.img} id={d.id} key={id}/>
               ))
             }
             

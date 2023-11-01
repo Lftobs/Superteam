@@ -1,0 +1,65 @@
+.tutorial-detail {
+    display: grid;
+    place-items: center;
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.tutorial-detail .content {
+    width: 70%;
+    margin-bottom: 2rem;
+}
+
+.tutorial-detail .c-txt {
+    font-size: .8rem;
+    text-align: left;
+    
+}
+
+.c-head h2:first-child {
+    color: var(--grey);
+}
+
+.c-head {
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+}
+
+.c-img {
+    width: 100%;
+    margin-block: 1rem;
+}
+
+.c-txt > p {
+    margin-block: .8rem;
+}
+
+.c-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.tutorial-detail ol {
+    margin-left: 1.5rem;
+}
+
+.tutorial-detail button {
+    display: flex;
+    padding: 13px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px solid #FFF;
+    background: #28955F;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-block: 4rem;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.tutorial-detail button:hover {
+    background: transparent;
+}

@@ -1,0 +1,108 @@
+
+
+.t-details {
+    font-size: .8rem;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    margin-bottom: .8rem;
+    margin-top: 2.3rem;
+    line-height: 1.8rem;
+    
+}
+
+.t-details h2 {
+    font-size: 1.3rem;
+    margin-block: .7rem;
+    width: 90%;
+    text-align: center;
+}
+
+
+.t-img {
+    width: 90%;
+}
+
+.t-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.t-details .txt {
+    width: 90%;
+}
+
+.mb-1 {
+    display: grid;
+    margin-block: .4rem;
+    word-break: break-all;
+}
+
+.mb-2 {
+    margin-block: .4rem;
+    word-break: break-all;
+}
+
+.t-details p {
+    margin-bottom: .25rem;
+}
+
+.t-details .ul, .t-details .ol {
+   margin-left: 2rem;
+   
+}
+
+.t-details ul {
+    list-style: disc;
+}
+
+.ul-1 {
+    margin-left: .8rem;
+    
+}
+
+.ul-1 li{
+    word-break: break-all;
+    
+}
+
+.head1 {
+    display: flex;
+    margin-bottom: .5rem; 
+}
+
+
+.head-txt {
+    color: var(--l-bg);
+    display: block;
+    font-weight: 800;
+    margin-bottom: .5rem !important;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.link {
+    all: unset !important;
+    color: blue !important;
+    cursor: pointer !important;
+    text-decoration: underline !important;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .t-img img {
+        object-fit: cover;
+    }
+
+    .t-img {
+        width: 90%;
+        height: auto;
+        
+    }
+}

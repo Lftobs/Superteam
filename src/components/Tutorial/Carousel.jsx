@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
-import '../assets/styles/components/Carousel.css'
+import '../../assets/styles/components/Tutorial/Carousel.css'
+import { scrollToTop } from '../../assets/Helper'
 
 const Carousel = ({ index, img, txt, title, no, styles}) => {
     const navigate = useNavigate()
@@ -19,7 +20,7 @@ const Carousel = ({ index, img, txt, title, no, styles}) => {
             </p>
             
         </div>
-        <button onClick={() => navigate(`${index}`, {state: {data: {img: img, title: title}}})}> Get Started <img src='/arrow-right2.svg' /> </button>
+        <button onClick={() => {navigate(`/tutorials/${index}`, {state: {data: {img: img, title: title, no: no}}}), scrollToTop()}}> Get Started <img src='/arrow-right2.svg' /> </button>
     </div>
   )
 }

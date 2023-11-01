@@ -4,17 +4,19 @@
     border-radius: 1.2rem;
     border: 1px solid #FFF;
     display: grid;
-    place-items: center;
+    place-items: left;
 }
 
 .card .img {
     height: auto;
     width: 100%;
     margin-bottom: 1.5rem;
+    border-radius: 1.2rem 1.2rem 0 0;
 }
 
 .card img {
     border-radius: 1.2rem 1.2rem 0 0;
+    width: 100%;
 }
 
 .card h3 {
@@ -46,10 +48,13 @@
 
 .card:nth-child(2), .card:nth-child(4), .card:nth-child(6)  {
     margin-top: 6rem;
+    
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1020px) {
     .card:nth-child(2), .card:nth-child(4), .card:nth-child(6)  {
         margin-top: 0rem;
+        width: 100%;
+        
     }
 }

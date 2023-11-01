@@ -22,17 +22,17 @@ nav ul {
   justify-content: space-evenly;
   width: 50%;
   list-style: none;
-
+  white-space: nowrap;
 }
 
 nav div {
   color: var(--l-bg);
   font-weight: 700;
   font-size: 1.5rem;
-
+  white-space: nowrap;
 }
 
-li {
+nav li {
   font-size: 1rem;
   display: flex;
   align-items: center;
@@ -46,7 +46,22 @@ nav figure {
   width: 1rem;
 }
 
-li:hover::before {
+nav li:hover::before {
+  content: '';
+  height: .7rem;
+  width: .7rem;
+  border-radius: 50%;
+  background: var(--l-bg);
+  display: flex;
+  position:relative;
+}
+
+.active {
+  color: var(--l-bg);
+  font-weight: 700;
+}
+
+.active::before {
   content: '';
   height: .7rem;
   width: .7rem;

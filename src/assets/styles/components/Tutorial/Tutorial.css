@@ -5,6 +5,7 @@
     grid-auto-flow: column;
     width: 50rem;
     overflow: hidden;
+    margin-top: -3rem;
     margin-bottom: 3rem;
 }
 
@@ -26,8 +27,12 @@
     width: .6rem;
     height: .6rem;
     border-radius: 50%;
-    background: rgba(141, 141, 141, 1);
+    background: var(--grey);
     /* border: 1px solid black; */
+}
+
+.dot-a {
+    background: var(--l-bg) !important;
 }
 
 .left, .right {

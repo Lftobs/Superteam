@@ -1,10 +1,19 @@
 .carousel-card {
     display: grid;
     padding: 1rem;
+    position: relative;
+    top: 0;
     background: white;
     width: 20rem;
     border-radius: 24px;
     border: 1px solid #08051E;
+    margin-top: 3rem;
+    transition:  top 1s ease-in-out;
+}
+
+.carousel-card:hover {
+    top: -2.5rem;
+    
 }
 
 .carousel-card .txt {

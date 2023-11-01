@@ -8,6 +8,8 @@ import AboutPage from './pages/AboutPage.jsx'
 import CasePage from './pages/CasePage.jsx'
 import TutorialsPage from './pages/TutorialsPage.jsx'
 import { Layout } from './components/Layout.jsx'
+import { CaseDetail } from './components/Case-studies/CaseDetail.jsx'
+import { TutorialDetail } from './components/Tutorial/TutorialDetail.jsx'
 
 
 const router = createBrowserRouter([
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
       {
         path: '/tutorials',
         element: <TutorialsPage />
+      },
+      {
+        path: '/tutorials/:id',
+        element: <TutorialDetail />
+      },
+      {
+        path: '/case-studies/:id',
+        element: <CaseDetail />
       },
       
     ]

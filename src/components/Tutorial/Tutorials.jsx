@@ -1,19 +1,21 @@
 import Carousel from "./Carousel"
-import '../assets/styles/components/Tutorial.css'
-import { useRef } from "react"
-import { tutorials as cft } from "../assets/Helper"
-import { useNavigate } from "react-router-dom"
+import '../../assets/styles/components/Tutorial/Tutorial.css'
+import { useRef, useState } from "react"
+import { tutorials as cft } from "../../assets/Helper"
+
 
 const Tutorials = ({styles}) => {
     const carouselRef = useRef()
-    const prev = (len, index) => {
-          carouselRef.current.scrollBy(-365, 0)
+    const [dot, setDot] = useState(0)
+
+    const prev = (len=4, index) => {
+      carouselRef.current.scrollBy(-320, 0)
+      setDot((prev) => (prev === 0 ? len-1: prev-1))
     }
 
-    const next = (len) => {
-        
-            carouselRef.current.scrollBy(365, 0)
-        
+    const next = (len) => {    
+      carouselRef.current.scrollBy(320, 0)
+      setDot((prev) => (prev === len-1 ? 0: prev+1))  
     }
   
     return (
@@ -24,21 +26,24 @@ const Tutorials = ({styles}) => {
             Participate in these series of challenges to enhance your technical skills, and knowledge of cybersecurity concepts in defending defend against a wide range of attacks.
           </p>
         </div>
-        {/* <div className='container'> */}
+        
         <div className='carousel' ref={carouselRef}>
-            { cft?.map((d, index) => {return (
+            { cft?.map((d, index) => {
+              return (
                 <Carousel index={index} title={d.title} img={d.img} no={d.no} txt={d.content} styles={styles} />
-            )})}
+              )}
+            )}
             
           
         </div>
         <div className='controls'>
             <span className='left' onClick={prev}> <img src='/Icon.svg'/> </span>
             <div className="dots">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                {cft?.map((_, index) =>
+                (
+                  <span key={index} className={index === dot ? 'dot-a': ''}></span>
+                ))}
+                
             </div>
             <span className='right' onClick={next}> <img src='/Icon2.svg'/> </span>
         </div>

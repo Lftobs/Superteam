@@ -1,16 +1,22 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import { scrollToTop } from '../assets/Helper'
 
-export const Footer = () => {
+
+export const Footer = ({isActive, handleActive}) => {
+  const navigate = useNavigate()
+  
+
   return (
     <footer>
         <div className='top'>
           <h3>Superteam Security</h3>
           <p>Protecting your Solana assets <br/> with expert security assessments <br/> and vulnerability remediation</p>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Case Studies</li>
-            <li>Tutorials</li>
+            <li onClick={() => { navigate('/'), handleActive('home')}} className={isActive=='home' ? "active": ""}> Home </li>
+            <li> About </li>
+            <li onClick={() => {navigate('case-studies/'), handleActive('case')}} className={isActive=='case' ? "active": ""}> Case study </li>
+            <li onClick={() => {navigate('tutorials/'), handleActive('tutorial')}} className={isActive=='tutorial' ? "active": ""}> Tutorials </li>
           </ul>
         </div>
         <div className='bottom'>
