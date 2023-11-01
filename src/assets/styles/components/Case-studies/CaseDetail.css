@@ -98,10 +98,11 @@
 @media screen and (max-width: 1000px) {
     .t-img img {
         object-fit: cover;
+        max-width: 100%;
     }
 
     .t-img {
-        width: 90%;
+        width: ;
         height: auto;
         
     }
