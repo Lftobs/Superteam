@@ -50,7 +50,7 @@
 
 .t-details .ul, .t-details .ol {
    margin-left: 2rem;
-   
+   word-break: break-all;
 }
 
 .t-details ul {
@@ -92,6 +92,7 @@
     color: blue !important;
     cursor: pointer !important;
     text-decoration: underline !important;
+    word-break: break-all !important;
 }
 
 
@@ -104,6 +105,5 @@
     .t-img {
         width: 90% !important;
         height: auto;
-        background: red;
     }
 }
