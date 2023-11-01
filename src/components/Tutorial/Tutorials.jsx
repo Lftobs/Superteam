@@ -8,14 +8,14 @@ const Tutorials = ({styles}) => {
     const carouselRef = useRef()
     const [dot, setDot] = useState(0)
 
-    const prev = (len=4, index) => {
-      carouselRef.current.scrollBy(-320, 0)
-      setDot((prev) => (prev === 0 ? len-1: prev-1))
+    const prev = (len=3, index) => {
+      carouselRef.current.scrollBy(-330, 0)
+      setDot((prev) => (prev === 0 ? 0 : prev-1))
     }
 
     const next = (len) => {    
-      carouselRef.current.scrollBy(320, 0)
-      setDot((prev) => (prev === len-1 ? 0: prev+1))  
+      carouselRef.current.scrollBy(330, 0)
+      setDot((prev) => (prev === 3 ? 3 : prev+1))  
     }
   
     return (
