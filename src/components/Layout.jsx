@@ -6,7 +6,7 @@ import { scrollToTop } from '../assets/Helper'
 
 
 export const Layout = () => {
-  const [isActive, setIsActive] = useState('home')
+  const [isActive, setIsActive] = useState('/')
   const handleActive = (tag, top=0) => {  
     setIsActive(tag)
     scrollToTop(top)

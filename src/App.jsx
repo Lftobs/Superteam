@@ -1,19 +1,27 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import './App.css'
 import Tutorials from './components/Tutorial/Tutorials'
 import { CaseStudies } from './components/Case-studies/CaseStudies'
 import { Contact } from './components/Contact'
 import { About } from './components/About'
+import { useParams } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
+  const {about} = useParams()
   
   const style = {
     bg: 'transparent',
     color: 'white'
   }
 
-  const id = 'about' 
+  useEffect(() =>{
+    if (about) {
+      const section = document.getElementById(about)
+      section ? section.scrollIntoView({behavior: 'smooth'}) : null
+    }
+  }, [about])
+
   return (
     <>
     <section className='pages'>
@@ -31,7 +39,7 @@ function App() {
         </div>
         <div className='h-img'><img src="/Solana SOL Coin.svg" alt="" /></div>
       </div>
-      <About id={id}/>
+      <About id={about}/>
       <CaseStudies />
 
       <Tutorials styles={{}}/>

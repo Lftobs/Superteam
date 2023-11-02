@@ -1,11 +1,12 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import { scrollToTop } from '../assets/Helper'
+import { useNavigate, useLocation } from 'react-router-dom'
+
 
 
 export const Footer = ({isActive, handleActive}) => {
   const navigate = useNavigate()
-  
+  const location = useLocation()
+  console.log(location.pathname)
 
   return (
     <footer>
@@ -13,10 +14,10 @@ export const Footer = ({isActive, handleActive}) => {
           <h3>Superteam Security</h3>
           <p>Protecting your Solana assets <br/> with expert security assessments <br/> and vulnerability remediation</p>
           <ul>
-            <li onClick={() => { navigate('/'), handleActive('home')}} className={isActive=='home' ? "active": ""}> Home </li>
-            <li> About </li>
-            <li onClick={() => {navigate('case-studies/'), handleActive('case')}} className={isActive=='case' ? "active": ""}> Case study </li>
-            <li onClick={() => {navigate('tutorials/'), handleActive('tutorial')}} className={isActive=='tutorial' ? "active": ""}> Tutorials </li>
+            <li onClick={() => { navigate('/'), handleActive(location.pathname)}} className={location.pathname=='/' ? "active": ""}> Home </li>
+            <li onClick={() => navigate('/about')} className={location.pathname=='/about'? 'active': ''}> About </li>
+            <li onClick={() => {navigate('case-studies/'), handleActive(location.pathname)}} className={location.pathname=='/case-studies/' ? "active": ""}> Case study </li>
+            <li onClick={() => {navigate('tutorials/'), handleActive(location.pathname)}} className={location.pathname=='/tutorials/' ? "active": ""}> Tutorials </li>
           </ul>
         </div>
         <div className='bottom'>
