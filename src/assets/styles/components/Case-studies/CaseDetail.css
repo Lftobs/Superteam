@@ -1,5 +1,5 @@
 .t-details img{
-    width: 80%;
+    width: 100%;
 }
 
 .t-details {
@@ -53,6 +53,7 @@
 .t-details .ul, .t-details .ol {
    margin-left: 2rem;
    word-break: break-all;
+   background-color: red;
 }
 
 .t-details ul {
