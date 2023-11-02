@@ -37,7 +37,7 @@ nav li {
   display: flex;
   align-items: center;
   gap: .8rem;
-  transition: 1s ease;
+  transition: color 1s ease;
 }
 
 nav figure {
@@ -60,6 +60,7 @@ nav li:hover::before {
   color: var(--l-bg);
   font-weight: 700;
 }
+
 
 .active::before {
   content: '';
