@@ -52,7 +52,7 @@
 }
 
 @media screen and (max-width: 1020px) {
-    .card:nth-child(2), .card:nth-child(4), .card:nth-child(6)  {
+    .card:nth-child(2), .card:nth-child(4), .card:nth-child(6), .card:nth-child(5)  {
         margin-top: 0rem;
         width: 100%;
         
