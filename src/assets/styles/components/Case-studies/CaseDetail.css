@@ -56,6 +56,10 @@
    background-color: red;
 }
 
+.ol {
+    margin-left: 3rem;
+}
+
 .t-details ul {
     list-style: disc;
 }

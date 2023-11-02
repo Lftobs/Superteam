@@ -8,8 +8,8 @@ import { scrollToSection } from '../assets/Helper'
 const Nav = ({ isActive, handleActive}) => {
   const navigate = useNavigate()
   const location = useLocation()
-  const isCase = useMatch('/case-studies')
-  const isTutorial = useMatch('/tutorials')
+  const isCase = /^\/case-studies\/.*/;
+  const isTutorial = /^\/tutorials\/.*/;
   
   return (
     <header>
@@ -28,8 +28,8 @@ const Nav = ({ isActive, handleActive}) => {
                 </svg>
               </figure>
             </span> </li>
-          <li onClick={() => {navigate('case-studies/'), handleActive(location.pathname)}} className={isCase ? "active": ""}> Case study </li>
-          <li onClick={() => {navigate('tutorials/'), handleActive(location.pathname)}} className={isTutorial ? "active": ""}> Tutorials </li>
+          <li onClick={() => {navigate('case-studies/'), handleActive(location.pathname)}} className={isCase.test(location.pathname) ? "active": ""}> Case study </li>
+          <li onClick={() => {navigate('tutorials/'), handleActive(location.pathname)}} className={isTutorial.test(location.pathname) ? "active": ""}> Tutorials </li>
         </ul>
       </nav>
     </header>
