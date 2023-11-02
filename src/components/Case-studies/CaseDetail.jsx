@@ -67,7 +67,7 @@ export const CaseDetail = () => {
               <li>These accounts are responsible to record and track the collateral that is allowed to mint $CASH.</li>
               <li>It also has validation logic that is given below.</li>
             </ul>
-            <img src='' />
+            <img src='/image 70.svg' />
 
             <span className='mb-1'>The vulnerability lies in the above code as it fails to check the validity of the “Bank” account.</span>
             <ul className='ul'>
@@ -83,7 +83,7 @@ export const CaseDetail = () => {
             We need to add 1 line of code that is assert_keys_eq!(self.bank.crate_mint, self.crate_mint).This validation ensures that the Bank account's crate_mint is the correct crate_mint for $CASH.
             <br /><span className='underline mb-1'>Patch link</span>
 
-            <img src='' alt=''/>
+            <img src='/image 72.svg' alt=''/>
 
             <span className='head1'>What did hacker do with the funds after the exploit was successful?</span>
             <ol className='ol'>
