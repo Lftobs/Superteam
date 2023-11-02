@@ -9,12 +9,12 @@ const Tutorials = ({styles}) => {
     const [dot, setDot] = useState(0)
 
     const prev = (len=3, index) => {
-      carouselRef.current.scrollBy(-330, 0)
+      carouselRef.current.scrollBy(-336, 0)
       setDot((prev) => (prev === 0 ? 0 : prev-1))
     }
 
     const next = (len) => {    
-      carouselRef.current.scrollBy(330, 0)
+      carouselRef.current.scrollBy(336, 0)
       setDot((prev) => (prev === 3 ? 3 : prev+1))  
     }
   
