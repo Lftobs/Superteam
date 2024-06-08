@@ -67,7 +67,10 @@ export const CaseDetail = () => {
               <li>These accounts are responsible to record and track the collateral that is allowed to mint $CASH.</li>
               <li>It also has validation logic that is given below.</li>
             </ul>
-            <img src='/image 70.svg' />
+            <div className='content-img'>
+              <img src='/image 70.svg' />
+            </div>
+            
 
             <span className='mb-1'>The vulnerability lies in the above code as it fails to check the validity of the “Bank” account.</span>
             <ul className='ul'>

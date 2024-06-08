@@ -13,9 +13,10 @@
   /* outline: 2px solid yellow; */
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
 }
+
 
 .pages {
   background: rgba(18, 49,44, 1);
@@ -24,17 +25,25 @@ html {
   color: white;
 }
 
+/* .hero {
+  height: auto;
+  background: red;
+  overflow: hidden;
+} */
+
 h2 {
   font-weight: 700;
 }
 
 .pat {
-  height: auto;
+  /* height: 35rem; */
   width: 100%;
   inset: 0;
   position: absolute;
+  /* background-color: black; */
   /* z-index: -1; */
   background-image: url('/Pattern.svg');
+  background-repeat: no-repeat;
 }
 
 
@@ -319,8 +328,14 @@ footer li {
 
 
 @media screen and (min-width: 1500px) {
+  .pat2 {
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    
+  }
   .pat, .pat2 {
-    display: none;
+    max-height: 35rem;
+    max-width: 1900px;
   }
 }
 

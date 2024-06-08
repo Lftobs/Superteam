@@ -25,20 +25,22 @@ function App() {
   return (
     <>
     <section className='pages'>
-      <div className="pat"></div>
-      <div className="pat2"></div>
-      <div className='h-content'>
-        <div className='h-text'>
-          <h2>
-            Collections of Hacks on the <span>Solana Protocols</span> 
-          </h2>
-          <p>
-            Protecting your Solana assets with expert security assessments and vulnerability remediation
-          </p>
-          <button>Find Out More <span><figure></figure></span></button>
+      <section className='hero'>
+        <div className="pat"></div>
+        <div className="pat2"></div>
+        <div className='h-content'>
+          <div className='h-text'>
+            <h2>
+              Collections of Hacks on the <span>Solana Protocols</span> 
+            </h2>
+            <p>
+              Protecting your Solana assets with expert security assessments and vulnerability remediation
+            </p>
+            <button>Find Out More <span><figure></figure></span></button>
+          </div>
+          <div className='h-img'><img src="/Solana SOL Coin.svg" alt="" /></div>
         </div>
-        <div className='h-img'><img src="/Solana SOL Coin.svg" alt="" /></div>
-      </div>
+      </section>
       <About id={about}/>
       <CaseStudies />
 
